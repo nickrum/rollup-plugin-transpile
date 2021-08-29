@@ -1,0 +1,38 @@
+{
+  "name": "rollup-plugin-transpile",
+  "version": "0.1.0",
+  "description": "A Rollup plugin to transpile Ecmascript and Typescript",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "copy": "cp ./dist/index.es.js ./bootstrap.js",
+    "bootstrap": "npm run build && npm run copy && npm run build && npm run copy"
+  },
+  "author": "Nicola Krumschmidt",
+  "license": "MIT",
+  "keywords": [
+    "rollup",
+    "plugin",
+    "transpile",
+    "transform",
+    "ecmascript",
+    "typescript"
+  ],
+  "peerDependencies": {
+    "rollup": "^2.56.0"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^4.1.1",
+    "@swc/core": "^1.2.83",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.4",
+    "prettier": "^2.3.2",
+    "rollup": "^2.56.3",
+    "rollup-plugin-dts": "^3.0.2",
+    "typescript": "^4.4.2"
+  }
+}
