@@ -1,6 +1,5 @@
+import transpile from 'rollup-plugin-transpile';
 import dts from 'rollup-plugin-dts';
-
-import transpile from './bootstrap.js';
 
 import pkg from './package.json';
 
