@@ -1,33 +1,25 @@
 {
-    "compilerOptions": {
-        "target": "ES2019",
-        "lib": [
-            "ES2019"
-        ],
-        "moduleResolution": "node",
-        "declaration": true,
-        "declarationMap": true,
-        "strict": true,
-        "noFallthroughCasesInSwitch": true,
-        "esModuleInterop": true,
-        "noImplicitAny": true,
-        "noImplicitThis": true,
-        "noImplicitReturns": true,
-        "noUnusedLocals": true,
-        "noUncheckedIndexedAccess": true,
-        "noUnusedParameters": true,
-        "resolveJsonModule": false,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "allowSyntheticDefaultImports": true,
-        "isolatedModules": true,
-        "rootDir": "./src"
-    },
-    "include": [
-        "./src/**/*.ts"
-    ],
-    "exclude": [
-        "dist",
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "target": "ES2019",
+    "lib": ["ES2019"],
+    "moduleResolution": "node",
+    "declaration": true,
+    "declarationMap": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": false,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "rootDir": "src"
+  },
+  "include": ["src/**/*.ts"]
 }
