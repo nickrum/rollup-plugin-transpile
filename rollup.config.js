@@ -1,4 +1,4 @@
-import transpile from './dist/index.js';
+import transpile from './node_modules/rollup-plugin-transpile/dist/index.js';
 import dts from 'rollup-plugin-dts';
 
 import pkg from './package.json' assert { type: 'json' };
