@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-transpile",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "A Rollup plugin to transpile Ecmascript and Typescript",
   "type": "module",
   "exports": {
