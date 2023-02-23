@@ -1,7 +1,7 @@
-import transpile from 'rollup-plugin-transpile';
+import transpile from './dist/index.es.js';
 import dts from 'rollup-plugin-dts';
 
-import pkg from './package.json';
+import pkg from './package.json' assert { type: 'json' };
 
 const external = Object.keys(pkg.dependencies).concat(['path', 'fs']);
 

@@ -2,6 +2,7 @@
   "name": "rollup-plugin-transpile",
   "version": "0.1.1",
   "description": "A Rollup plugin to transpile Ecmascript and Typescript",
+  "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -19,18 +20,17 @@
     "typescript"
   ],
   "peerDependencies": {
-    "rollup": "^2.56.0"
+    "rollup": "^3.0.0"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^4.1.1",
-    "@swc/core": "^1.2.83"
+    "@rollup/pluginutils": "^5.0.2",
+    "@swc/core": "^1.3.36"
   },
   "devDependencies": {
     "@types/node": "^16.7.4",
-    "prettier": "^2.3.2",
-    "rollup": "^2.56.3",
-    "rollup-plugin-dts": "^3.0.2",
-    "rollup-plugin-transpile": "^0.1.0",
-    "typescript": "^4.4.2"
+    "prettier": "^2.8.4",
+    "rollup": "^3.17.2",
+    "rollup-plugin-dts": "^5.2.0",
+    "typescript": "^4.9.5"
   }
 }
