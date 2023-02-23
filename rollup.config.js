@@ -1,4 +1,4 @@
-import transpile from './dist/index.es.js';
+import transpile from './dist/index.js';
 import dts from 'rollup-plugin-dts';
 
 import pkg from './package.json' assert { type: 'json' };
@@ -11,15 +11,19 @@ export default [
     plugins: [transpile({ transform: 'typescript' })],
     external,
     output: [
-      { format: 'cjs', file: pkg.main, exports: 'auto' },
-      { format: 'es', file: pkg.module }
+      {
+        format: 'cjs',
+        file: pkg['exports']['.']['require']['default'],
+        exports: 'auto'
+      },
+      { format: 'es', file: pkg['exports']['.']['import']['default'] }
     ]
   },
   {
     input: 'src/index.ts',
     plugins: [dts()],
     output: {
-      file: pkg.types
+      file: pkg['exports']['.']['import']['types']
     }
   }
 ];
